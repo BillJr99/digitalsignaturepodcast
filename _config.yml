@@ -41,4 +41,4 @@ collections:
 analytics:
   provider               :  "google-tag" # false (default), "google", "google-universal", "google-tag", "custom"
   google:
-    tracking_id          : "G-0CXXV6F2JP"
+    tracking_id          : "G-MD65N1R66S"
