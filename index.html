@@ -49,6 +49,9 @@ layout: default
         </h2>
         <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
         <p>{{ post.summary }} </p>
+        {% if post.activitytitle %}
+        <p>Activity: {{ post.activitytitle }}</p>
+        {% endif %}
         </div>
     {% endfor %}
     
