@@ -9,11 +9,11 @@ layout: default
     
     <div class="container center-content">
     <div class="seven columns">
-    {% if page.type contains "audio" %}
+    {% if page.filetype contains "audio" %}
     <audio controls>
         <source src="{{ page.file }}" type="audio/mp3">
     </audio>
-    {% elsif page.type contains "youtube" %}
+    {% elsif page.filetype contains "youtube" %}
     <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.file}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     {% else %}
     {{page.file}}
@@ -27,10 +27,13 @@ layout: default
 <div>
     {{ content }}
     
-    {% if page.activitylink and page.activitytitle %}
+    {% if page.activitylink and page.activitytitle and page.activitydescription %}
     <div class="four columns center-content">
+    <h2>{{ page.activitytitle }}</h2>
     <p>
-    <a href="{{ page.activitylink }}" class="button u-full-height" download="{{ page.activitytitle }}">Try it Out!</a>
+    {{ page.activitydescription }}
+    <br>
+    <a href="{{ page.activitylink }}" class="button u-full-height">Try it Out!</a>
     </p>
     </div>
     {% endif %}
