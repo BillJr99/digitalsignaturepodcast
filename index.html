@@ -59,19 +59,21 @@ layout: default
 </div>
 
 <div class="card-grid">
+    <div class="cards">
     <h1 class="label">Activities</h1>
-    {% for activity in site.activities %}
-        <div class="cards">
-        <h2>
-          <a class="post-link" href="{{ activity.permalink | prepend: site.baseurl }}">{{ activity.title }}</a>
-        </h2>
-        <p class="meta">{{ activity.gradelevel }} - {{ activity.category }}</p>
-        <p>{{ activity.summary }} </p>
-        {% if activity.title %}
-        <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity: {{ activity.title }}</a></p>
-        {% endif %}         
-        </div>
-    {% endfor %}
+        {% for activity in site.activities %}
+            <div class="cards">
+            <h2>
+              <a class="post-link" href="{{ activity.permalink | prepend: site.baseurl }}">{{ activity.title }}</a>
+            </h2>
+            <p class="meta">{{ activity.gradelevel }} - {{ activity.category }}</p>
+            <p>{{ activity.summary }} </p>
+            {% if activity.title %}
+            <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity: {{ activity.title }}</a></p>
+            {% endif %}         
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 <div class="container center-content extra-padding">
