@@ -9,12 +9,21 @@ layout: default
     
     <div class="container center-content">
     <div class="seven columns">
+    {% if page.type == 'audio' %}
     <audio controls>
         <source src="{{ page.file }}" type="audio/mp3">
     </audio>
+    {% elsif page.type == 'youtube' %}
+    <iframe width="560" height="315" src="{{page.file}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    {% else %}
+    {{page.file}}
+    {% endif %}
     </div>
     <div class="four columns center-content">
-    <a href="{{ site.baseurl }}{{ page.file }}" class="button u-full-height" download="{{ page.title }}">Download Now</a>
+    <!--<a href="{{ site.baseurl }}{{ page.file }}" class="button u-full-height" download="{{ page.title }}">Download Now</a>-->
+    {% if page.activitylink and page.activitytitle %}
+    <a href="{{ page.activitylink }}" class="button u-full-height">{{ page.activitytitle }}</a>
+    {% endif %}
     </div>
         </div>
 <div>
