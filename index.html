@@ -59,7 +59,7 @@ layout: default
 </div>
 
 <div class="card-grid">
-    <h1 class="label reversed">Activities</h1>
+    <h1 class="label">Activities</h1>
     {% for activity in site.activities %}
         <div class="cards">
         <h2>
@@ -67,8 +67,8 @@ layout: default
         </h2>
         <p class="meta">{{ activity.gradelevel }} - {{ activity.category }}</p>
         <p>{{ activity.summary }} </p>
-        {% if first_post.activitylink and first_post.activitytitle %}
-        <p><a href="{{ post.activitylink}}" class="button button-primary">Try the Activity: {{ post.activitytitle }}</a></p>
+        {% if activity.title %}
+        <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity: {{ activity.title }}</a></p>
         {% endif %}         
         </div>
     {% endfor %}
