@@ -29,7 +29,7 @@ layout: default
     
     {% if page.activitylink and page.activitytitle and page.activitydescription %}
     <div class="four columns center-content">
-    <h2>{{ page.activitytitle }}</h2>
+    <h3>Activity: {{ page.activitytitle }}</h3>
     <p>
     {{ page.activitydescription }}
     <br>
@@ -37,7 +37,9 @@ layout: default
     </p>
     </div>
     {% endif %}
-    
+</div>
+
+<div>
     <p><em>Keywords - {{ page.keywords }}</em></p>
 </div>
 
