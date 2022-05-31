@@ -9,11 +9,11 @@ layout: default
     
     <div class="container center-content">
     <div class="seven columns">
-    {% if page.type == 'audio' %}
+    {% if page.type == "audio" %}
     <audio controls>
         <source src="{{ page.file }}" type="audio/mp3">
     </audio>
-    {% elsif page.type == 'youtube' %}
+    {% elsif page.type == "youtube" %}
     <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.file}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     {% else %}
     {{page.file}}
