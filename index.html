@@ -28,15 +28,15 @@ layout: default
                 {% endif %}
             </div>
             {% if first_post.activitytitle and first_post.activitylink and first_post.activitydescription %}
-            <div class="center-content">
-            <p>
-                {{  first_post.activitydescription }}
-            </p>
+            <div class="four columns center-content">
+                <p>
+                    {{ first_post.activitydescription }}
+                </p>
             </div>
-            <div class="center-content">
-            <p>
-            <a href="{{ first_post.activitylink}}" class="button button-primary">{{  first_post.activitytitle }}</a>
-            </p>
+            <div class="four columns center-content">
+                <p>
+                    <a href="{{ first_post.activitylink}}" class="button button-primary">{{  first_post.activitytitle }}</a>
+                </p>
             </div>
             {% endif %}
         </div>            
