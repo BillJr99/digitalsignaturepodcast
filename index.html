@@ -52,25 +52,7 @@ layout: default
         <p>{{ post.summary }} </p>
         {% if post.activitytitle %}
         <p>Activity: {{ post.activitytitle }}</p>
-        {% endif %}
-        
-            <div class="four columns center-content">
-                <p>
-                {% if first_post.filetype contains "audio" %}
-                    <a href="{{ first_post.file }}" class="button button-primary">Listen Now</a>    
-                {% elsif first_post.filetype contains "youtube" %}
-                    <a href="https://www.youtube.com/watch?v={{ first_post.file }}" class="button button-primary">Watch Now</a> 
-                {% else %}
-                    <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.file }}">Download Now</a> 
-                {% endif %}
-                </p>
-                
-                {% if first_post.activitylink %}
-                    <p>
-                        <a href="{{ first_post.activitylink}}" class="button button-primary">Try the Activity: {{  first_post.activitytitle }}</a>
-                    </p>
-                {% endif %}
-            </div>         
+        {% endif %}       
         </div>
     {% endfor %}
     
