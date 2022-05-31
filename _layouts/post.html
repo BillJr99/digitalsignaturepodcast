@@ -27,6 +27,14 @@ layout: default
 <div>
     {{ content }}
     
+    {% if page.activitylink and page.activitytitle %}
+    <div class="four columns center-content">
+    <p>
+    <a href="{{ page.activitylink }}" class="button u-full-height" download="{{ page.activitytitle }}">Try it Out!</a>
+    </p>
+    </div>
+    {% endif %}
+    
     <p><em>Keywords - {{ page.keywords }}</em></p>
 </div>
 
