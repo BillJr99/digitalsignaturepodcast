@@ -34,7 +34,7 @@ layout: default
                 {% endif %}
                 </p>
                 
-                {% if first_post.activitylink %}
+                {% if first_post.activitylink and first_post.activitytitle %}
                     <p>
                         <a href="{{ first_post.activitylink}}" class="button button-primary">Try the Activity: {{  first_post.activitytitle }}</a>
                     </p>
@@ -50,17 +50,16 @@ layout: default
         </h2>
         <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
         <p>{{ post.summary }} </p>
-        {% if post.activitytitle %}
-        <p>Activity: {{ post.activitytitle }}</p>
+        {% if first_post.activitylink and first_post.activitytitle %}
+        <p><a href="{{ post.activitylink}}" class="button button-primary">Try the Activity: {{ post.activitytitle }}</a></p>
         {% endif %}       
         </div>
     {% endfor %}
     
 </div>
 
-<div class="container center-content extra-padding">
-</div>
-
+<div class="card-grid">
+    <h1 class="label reversed">Activities</h1>
     {% for activity in site.activities %}
         <div class="cards">
         <h2>
@@ -68,5 +67,12 @@ layout: default
         </h2>
         <p class="meta">{{ activity.gradelevel }} - {{ activity.category }}</p>
         <p>{{ activity.summary }} </p>
+        {% if first_post.activitylink and first_post.activitytitle %}
+        <p><a href="{{ post.activitylink}}" class="button button-primary">Try the Activity: {{ post.activitytitle }}</a></p>
+        {% endif %}         
         </div>
     {% endfor %}
+</div>
+
+<div class="container center-content extra-padding">
+</div>
