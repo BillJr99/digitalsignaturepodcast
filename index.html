@@ -19,7 +19,13 @@ layout: default
                 <p>{{ first_post.summary }} </p> 
             </div>
             <div class="four columns center-content">
-                <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.title }}">Download Now</a>    
+                {% if page.type == 'audio' %}
+                <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.title }}">Listen Now</a>    
+                {% elsif page.type == 'youtube' %}
+                <a href="https://www.youtube.com/watch?v={{ first_post.file }}" class="button button-primary" download="{{ first_post.title }}">Watch Now</a> 
+                {% else %}
+                <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.title }}">Download Now</a> 
+                {% endif %}
             </div>
         </div>            
         </div>
