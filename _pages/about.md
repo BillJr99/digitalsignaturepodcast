@@ -15,6 +15,6 @@ Digital signatures are unique, like a fingerprint.  So, too, are the journeys an
 
 ### About Bill
 
-<img style="float: left; padding: 0px 10px 10px 0px;" src="https://www.billmongan.com/images/profile.png" alt="Bill Mongan">
+<img style="float: left; padding: 0px 10px 5px 0px;" src="https://www.billmongan.com/images/profile.png" alt="Bill Mongan">
 
 [Bill Mongan](http://www.billmongan.com) is the host of the Digital Signature Podcast.  He studied at Drexel University in Philadelphia, PA, USA, where he received his B.S. and M.S. in Computer Science, and his Ph.D. in Electrical and Computer Engineering.  Along the way, he developed a passion for teaching and science communication, and received the M.S.Ed. in Science of Instruction, along with a Pennsylvania teaching certificate in secondary Mathematics and in secondary Computer Science.  He was a Teaching Professor at Drexel from 2008 through 2019, and is now a faculty member in the Mathematics and Computer Science Department at Ursinus College in Collegeville, PA.  In this role, he works with the Pennsylvania Department of Education's [Pennsylvania Training and Technical Assistance Network (PaTTAN)](https://www.pattan.net/) on various educational initiatives, including this podcast.
