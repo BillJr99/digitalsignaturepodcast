@@ -1,0 +1,17 @@
+{
+	"name": "Link Rot",
+	"icons": [
+		{
+			"src": "\/images\/jorge-ramirez-MceA9kSze0U-unsplash.jpg",
+			"sizes": "192x192",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/jorge-ramirez-MceA9kSze0U-unsplash.jpg",
+			"sizes": "512x512",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#323232",
+	"display": "standalone"
+}
