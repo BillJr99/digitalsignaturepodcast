@@ -34,7 +34,11 @@
             <itunes:subtitle>{{ site.title | xml_escape }}: {{ post.title | xml_escape }}</itunes:subtitle>
             <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
             <itunes:image href="{{ site.url }}/images/itunes.png" />
-            <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/>
+            {% if post.filetype contains "youtube" %}
+                <enclosure url="https://www.youtube.com/watch?v={{ post.file }}" length="{{ post.length }}" type="video/mp4"/>
+            {% else %}
+                <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/> 
+            {% endif %}            
             <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.duration }}</itunes:duration>
