@@ -7,6 +7,8 @@ gradelevel: secondary
 category: test
 
 summary: Lorem ipsum
+
+thumbnail: "https://www.billmongan.com/images/profile.png"
 ---
 
 Lorem ipsum
