@@ -8,14 +8,16 @@ layout: default
     </div>
     <div class="container extra-padding">
         <div>
-        <h2>{{ page.gradelevel | capitalize}} {{ page.subject | capitalize }} ({{ page.category | capitalize }})</h2>
-        <p>
-            {% if page.thumbnail %}
-                <img style="float: left; padding: 0px 10px 5px 0px;" width="256" src="{{ page.thumbnail }}">
-            {% endif %}
-            <i>{{ page.summary }}</i>
-        </p>
+            <h2>{{ page.gradelevel | capitalize}} {{ page.subject | capitalize }} ({{ page.category | capitalize }})</h2>
+            <p>
+                {% if page.thumbnail %}
+                    <img style="float: left; padding: 0px 10px 5px 0px;" width="256" src="{{ page.thumbnail }}">
+                {% endif %}
+                <i>{{ page.summary }}</i>
+            </p>
         </div>
+        
+        <div style="clear: both;"></div>
         
         <h2>Activity</h2>
         {{ content }}
