@@ -7,6 +7,8 @@ gradelevel: secondary
 category: microbit
 subject: computing
 
+gitrepo: https://github.com/billjr99/hide-and-seek
+
 summary: "In this activity, we will use the Bluetooth radio of the micro:bit to estimate the distance between two micro:bits by measuring the strength of the radio signal, and play a game of hide-and-seek."
 
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Hiding_in_the_Haycocks_%281881%29_by_William_Bliss_Baker.jpg"

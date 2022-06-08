@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <article class="post">
 
     <div class="center-content">
@@ -14,6 +17,10 @@ layout: default
                     <img style="float: left; padding: 0px 10px 5px 0px;" width="256" src="{{ page.thumbnail }}">
                 {% endif %}
                 <i>{{ page.summary }}</i>
+                {% if page.gitrepo %}
+                <br>
+                View or import from this git repository: <a href="{{ page.gitrepo }}">{{ page.gitrepo }}</a>
+                {% endif %}
             </p>
         </div>
         
