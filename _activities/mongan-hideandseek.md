@@ -68,7 +68,7 @@ Finally, if you'd like a whole class to use this at once, it is helpful to put e
 Here's my finished product, available at [https://www.billmongan.com/hide-and-seek/](https://www.billmongan.com/hide-and-seek/):
 
 <p align="center">
-<img style="max-width:100vw;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/hide-and-seek/raw/master/.github/makecode/blocks.png">
+<img style="max-width:100%;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/hide-and-seek/raw/master/.github/makecode/blocks.png">
 </p>
 
 ### Extension: How Far Away?

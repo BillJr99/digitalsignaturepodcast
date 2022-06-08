@@ -70,7 +70,7 @@ It's easier to see single digit numbers on the Microbit, but single digit values
 Here's my finished product, available at [https://www.billmongan.com/random-number-generator/](https://www.billmongan.com/random-number-generator/):
 
 <p align="center">
-<img style="max-width:100vw;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/random-number-generator/raw/master/.github/makecode/blocks.png">
+<img style="max-width:100%;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/random-number-generator/raw/master/.github/makecode/blocks.png">
 </p>
 
 ### Extension: Playing with the Seed Values

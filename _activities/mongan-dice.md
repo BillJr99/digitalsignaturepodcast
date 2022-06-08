@@ -59,7 +59,7 @@ Change the <strong>forever</strong> block to subtract 1 from each of the <strong
 Here's my finished product, available at [https://www.billmongan.com/dice/](https://www.billmongan.com/dice/):
 
 <p align="center">
-<img style="max-width:100vw;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/dice/raw/master/.github/makecode/blocks.png">
+<img style="max-width:100%;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/dice/raw/master/.github/makecode/blocks.png">
 </p>
 
 ### Extension: Displaying the Dice Value
