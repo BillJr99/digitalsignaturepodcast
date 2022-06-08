@@ -9,10 +9,10 @@ subject: computing
 
 summary: "In this activity, we will use the Bluetooth radio of the micro:bit to estimate the distance between two micro:bits by measuring the strength of the radio signal, and play a game of hide-and-seek."
 
-thumbnail: "https://commons.wikimedia.org/wiki/File:Hiding_in_the_Haycocks_(1881)_by_William_Bliss_Baker.jpg#/media/File:Hiding_in_the_Haycocks_(1881)_by_William_Bliss_Baker.jpg"
+thumbnail: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Hiding_in_the_Haycocks_%281881%29_by_William_Bliss_Baker.jpg"
 ---
 
-If you've ever lost your backpack, glasses, or other items, you might be aware of [tools](https://www.thetileapp.com/) designed to help find those items by playing a sound and letting you see how close you are to the missing item.  By listening to the sound, you can track down where the missing item is.  As you get closer to the source, the sound becomes louder.  Sometimes, devices like these emit a radio signal - not an audible sound, but an invisible wave of light, that computers can sense with a radio antenna.  As you get closer to the source of the signal, the intensity of the signal increases, just like the sound did.  Using the [BBC Microbit](https://microbit.org/) no-code platform, we will develop a system to communicate a radio signal between two devices to play a game of "hide and seek" where the goal is to locate the source of the invisible signal \[[^4]\].
+If you've ever lost your backpack, glasses, or other items, you might be aware of [tools](https://www.thetileapp.com/) designed to help find those items by playing a sound and letting you see how close you are to the missing item.  By listening to the sound, you can track down where the missing item is.  As you get closer to the source, the sound becomes louder.  Sometimes, devices like these emit a radio signal - not an audible sound, but an invisible wave of light, that computers can sense with a radio antenna.  As you get closer to the source of the signal, the intensity of the signal increases, just like the sound did.  Using the [BBC Microbit](https://microbit.org/) no-code platform, we will develop a system to communicate a radio signal between two devices to play a game of "hide and seek" where the goal is to locate the source of the invisible signal.
 
 First, students should plan a solution together: what steps are required to play a game of [Marco Polo](https://en.wikipedia.org/wiki/Marco_Polo_(game))?  Without requiring a technical background, some insights can emerge: every so often, the "source" generates a signal that the players can hear (but can't see); this sound has a direction and intensity that helps the players move closer to the source.  As this repeats, if the sound becomes louder, we can infer that we are getting closer.  
 
@@ -22,7 +22,7 @@ Let's make a flow-chart of this idea and lay out the building blocks in the soft
 <img alt="Hide and Seek Flowchart" src="/hide-and-seek/files/hideandseek.drawio.png">
 </p>
 
-We can build each of these steps in the [Microbit Makecode environment](https://makecode.microbit.org/) \[[^4]\].  We will build this from scratch, but you can import it by clicking the Import button and importing from this URL: [https://github.com/billjr99/hide-and-seek](https://github.com/billjr99/hide-and-seek).  This environment includes a simulator that will run the project without physical hardware, but if you have the devices, they can be downloaded to a physical Microbit by clicking the three dots next to the Download button, and choosing "Connect to Device" from the menu that appears.  You'll need two divices for this project (one to "hide" and one to "seek").
+We can build each of these steps in the [Microbit Makecode environment](https://makecode.microbit.org/).  We will build this from scratch, but you can import it by clicking the Import button and importing from this URL: [https://github.com/billjr99/hide-and-seek](https://github.com/billjr99/hide-and-seek).  This environment includes a simulator that will run the project without physical hardware, but if you have the devices, they can be downloaded to a physical Microbit by clicking the three dots next to the Download button, and choosing "Connect to Device" from the menu that appears.  You'll need two divices for this project (one to "hide" and one to "seek").
 
 #### Getting Started: Sending a Signal
 
@@ -63,7 +63,7 @@ Finally, if you'd like a whole class to use this at once, it is helpful to put e
 
 #### The Finished Project
 
-Here's my finished product:
+Here's my finished product, available at [https://www.billmongan.com/hide-and-seek/](https://www.billmongan.com/hide-and-seek/):
 
 <p align="center">
 <img alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/hide-and-seek/raw/master/.github/makecode/blocks.png">
