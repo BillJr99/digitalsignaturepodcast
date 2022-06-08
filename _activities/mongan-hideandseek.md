@@ -19,7 +19,7 @@ First, students should plan a solution together: what steps are required to play
 Let's make a flow-chart of this idea and lay out the building blocks in the software environment.  
 
 <p align="center">
-<img alt="Hide and Seek Flowchart" src="/hide-and-seek/files/hideandseek.drawio.png">
+<img alt="Hide and Seek Flowchart" src="https://www.billmongan.com/hide-and-seek/files/hideandseek.drawio.png">
 </p>
 
 We can build each of these steps in the [Microbit Makecode environment](https://makecode.microbit.org/).  We will build this from scratch, but you can import it by clicking the Import button and importing from this URL: [https://github.com/billjr99/hide-and-seek](https://github.com/billjr99/hide-and-seek).  This environment includes a simulator that will run the project without physical hardware, but if you have the devices, they can be downloaded to a physical Microbit by clicking the three dots next to the Download button, and choosing "Connect to Device" from the menu that appears.  You'll need two divices for this project (one to "hide" and one to "seek").
