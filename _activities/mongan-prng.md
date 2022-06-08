@@ -35,7 +35,7 @@ Where:
 * <strong>X</strong> is the current random number value
 * <strong>a</strong> is a multiplier that we multiply the random number by
 * <strong>b</strong> is a value that we add to the random number
-* <strong>c</strong> is the &quot;&modulus&quot; that we take the remainder of the random number
+* <strong>c</strong> is the &quot;modulus&quot; that we take the remainder of the random number
 
 The new random number <strong>X</strong> depends on the prior value: you can see this because <strong>X</strong> is on the left side of the equation and the right side of the equation.  Make up some values for <strong>a</strong>, <strong>b</strong>, and <strong>c</strong>, and generate some random numbers on paper using a calculator.  You'll need a starting random number of <strong>X</strong>: pick any number you like!  This is called a <strong>seed</strong> value, and it determines all the random numbers that this function will generate.
 
