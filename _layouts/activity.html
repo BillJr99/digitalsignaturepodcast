@@ -7,6 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     </div>
     <div class="container extra-padding">
+        <div>
         <h2>{{ page.gradelevel | capitalize}} {{ page.subject | capitalize }} ({{ page.category | capitalize }})</h2>
         <p>
             {% if page.thumbnail %}
@@ -14,6 +15,7 @@ layout: default
             {% endif %}
             <i>{{ page.summary }}</i>
         </p>
+        </div>
         
         <h2>Activity</h2>
         {{ content }}
