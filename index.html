@@ -61,10 +61,12 @@ layout: default
         <p>{{ post.summary }} </p>
         {% if post.activitytitle and post.activitydescription %}
         <p>Activity: {{  post.activitytitle }}</p>
-        {% endif %}        
+        {% endif %}   
+        <!--
         {% if post.activitylink %}
         <p><a href="{{ post.activitylink}}" class="button button-primary">Try the Activity</a></p>
         {% endif %}       
+        -->
         </div>
     {% endfor %}
 </div>
@@ -81,8 +83,10 @@ layout: default
         {% endif %}         
         <p class="meta">{{ activity.gradelevel }} {{ activity.subject }} - {{ activity.category }}</p>
         <p>{{ activity.summary }} </p>
+        <!--
         <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity</a></p>
         </div>
+        -->
     {% endfor %}
 </div>
 
