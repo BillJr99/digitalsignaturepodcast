@@ -53,6 +53,7 @@ You might notice that the first row of lights is filled in on the LED when the p
 Change the <strong>forever</strong> block to subtract 1 from each of the <strong>counts get value at</strong> steps, and your display should start out empty.  What's really happening is that our 0 value becomes -1, but the Micro:bit doesn't display negative numbers on the plot, so it skips those, leaving your display empty until you actually click the <strong>A</strong> button.
 
 ### Resetting the Counter
+One limitation of the LED display is that it only has a few rows.  Once it fills up, you won't know how many of each dice you rolled.  Add a block <strong>on button B pressed</strong>, where we will reset the counters and the display.  Add a <strong>clear screen</strong> step, and six steps of <strong>counts set value at</strong> to set all six values of the <strong>counts</strong> array to 0.  When your die counts fill up the screen, you can use the B button to reset them.
 
 ### The Finished Project
 
