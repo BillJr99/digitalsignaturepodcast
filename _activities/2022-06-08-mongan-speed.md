@@ -29,7 +29,7 @@ We're going to use Micro:bit devices to make these same measurements.  To decide
 Your Micro:bit flowchart will look something like this:
 
 <p align="center">
-<img alt="Speed Pitch Flowchart" src="https://www.billmongan.com/speed-pitch/files/workflow.drawio.png">
+<img style="max-width:100%;" alt="Speed Pitch Flowchart" src="https://www.billmongan.com/speed-pitch/files/workflow.drawio.png">
 </p>
 
 This flowchart establishes a <strong>protocol</strong> - the order in which the two Micro:bit devices will communicate with each other, to help ensure that we know which one is the &quot;first&quot; partner and which is the &quot;second&quot; partner.
