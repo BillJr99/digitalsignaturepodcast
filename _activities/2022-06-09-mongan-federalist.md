@@ -76,7 +76,7 @@ Finally, we can create a `dict` structure, which is kind of like an array, but a
   return feds
 ```
 
-Our array will look something like this (figure generated at [pythontutor.com](pythontutor.com)):
+Our array will look something like this (figure generated at [https://pythontutor.com/](https://pythontutor.com/)):
 
 <p align="center">
 <img style="max-width:100%;" alt="An Array of Dictionaries Representing Each Federalist Paper" src="/images/activity-federalist/dictionary-visualizer.png">
