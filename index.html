@@ -85,7 +85,7 @@ layout: default
             {% if activity.thumbnail %}
                 <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ activity.thumbnail }}">
             {% endif %}         
-            <p class="meta">{{ activity.gradelevel }} {{ activity.subject }} - {{ activity.category }}</p>
+            <p class="meta">{{ activity.gradelevel | downcase }} {{ activity.subject | downcase }} - {{ activity.category | downcase }}</p>
             <p>{{ activity.summary }} </p>
             <!--
             <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity</a></p>
