@@ -33,6 +33,11 @@ layout: default
         
         <h2>Activity</h2>
         {{ content }}
+        
+        {% if page.embedvideo %}
+        <h2>Video</h2>
+        {{ page.embedvideo }}
+        {% endif %}
     </div>
 
 </article>
