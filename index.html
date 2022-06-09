@@ -10,9 +10,8 @@ layout: default
 
     <p>Join us for conversations with guests with many different and unique experiences to learn about how you can launch your own passions into careers and opportunities in computing and technology.  We will also feature materials and activities at all levels that you, families, teachers, and anyone can try out at home to experience a &quot;day in the life&quot; of each of our guests.</p>
 
+    <h1 class="label">Episodes</h1>
     <div class="card-grid">
-    <!--     -->
-        
         {% assign first_post = site.posts.first %}
         <div class="cards first">
             <h1 class="label reversed">Latest Episode</h1>
@@ -54,7 +53,6 @@ layout: default
             </div>            
         </div>
         
-        <h1 class="label">Past Episodes</h1>
         {% for post in site.posts offset:1 %}
             <div class="cards">
             <h2 style="text-align: center;">
