@@ -9,7 +9,7 @@ subject: computing
 
 gitrepo: https://github.com/billjr99/hide-and-seek
 
-author: "William M. Mongan"
+authors: "William M. Mongan"
 date: 2022-06-08
 
 summary: "In this activity, we will use the Bluetooth radio of the micro:bit to estimate the distance between two micro:bits by measuring the strength of the radio signal, and play a game of hide-and-seek."

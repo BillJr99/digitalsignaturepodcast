@@ -9,7 +9,7 @@ subject: computing
 
 gitrepo: https://github.com/billjr99/speed-pitch
 
-author: "William M. Mongan"
+authors: "William M. Mongan"
 date: 2022-06-08
 
 summary: "In this activity, we use the radio and light sensor of the Micro:bit to detect an object passing each of two Micro:bits, to measure the time between passing each, and to compute the speed at which the object moved."

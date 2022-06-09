@@ -9,7 +9,7 @@ subject: statistics
 
 gitrepo: https://github.com/billjr99/dice
 
-author: "William M. Mongan"
+authors: "William M. Mongan"
 date: 2022-06-08
 
 summary: "In this activity, we will introduce arrays to store and display a count of dice rolls using random numbers from the Micro:bit."

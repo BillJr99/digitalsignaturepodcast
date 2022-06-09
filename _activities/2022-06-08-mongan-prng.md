@@ -9,7 +9,7 @@ subject: statistics
 
 gitrepo: https://github.com/billjr99/random-number-generator
 
-author: "William M. Mongan"
+authors: "William M. Mongan"
 date: 2022-06-08
 
 summary: "In this activity, we will use the Micro:bit to create a sequence of pseudo-random numbers using a formula."
