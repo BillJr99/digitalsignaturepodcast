@@ -5,7 +5,7 @@ permalink: /activities/federalist
 
 gradelevel: secondary
 category: python
-subject: "American History"
+subject: american history
 
 authors: "William M. Mongan"
 date: 2022-06-09
