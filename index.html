@@ -22,7 +22,7 @@ layout: default
                     </h2>
                     
                     {% if first_post.thumbnail %}
-                        <img style="float: left; padding: 0px 10px 5px 0px;" width="128" src="{{ first_post.thumbnail }}">
+                        <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ first_post.thumbnail }}">
                     {% endif %}
                     
                     <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
@@ -59,7 +59,7 @@ layout: default
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
             {% if post.thumbnail %}
-                <img style="float: left; padding: 0px 10px 5px 0px;" width="128" src="{{ post.thumbnail }}">
+                <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ post.thumbnail }}">
             {% endif %}        
             <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
             <p>{{ post.summary }} </p>
@@ -83,7 +83,7 @@ layout: default
               <a class="post-link" href="{{ activity.permalink | prepend: site.baseurl }}">{{ activity.title }}</a>
             </h2>
             {% if activity.thumbnail %}
-                <img style="float: left; padding: 0px 10px 5px 0px;" width="128" src="{{ activity.thumbnail }}">
+                <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ activity.thumbnail }}">
             {% endif %}         
             <p class="meta">{{ activity.gradelevel }} {{ activity.subject }} - {{ activity.category }}</p>
             <p>{{ activity.summary }} </p>
