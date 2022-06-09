@@ -1,7 +1,7 @@
 ---
 layout: activity
 title: "Classifying Flowers"
-permalink: /activities/thunder
+permalink: /activities/iris
 
 gradelevel: elementary
 category: r
