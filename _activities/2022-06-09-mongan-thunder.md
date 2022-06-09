@@ -56,3 +56,7 @@ A second version of this project that uses v2 sensors that measure sound volume 
 <p align="center">
 <img style="max-width:100%;" alt="The finished hide and seek project in the Microbit Makecode" src="https://github.com/billjr99/thunder-and-lightning-v2/raw/master/.github/makecode/blocks.png">
 </p>
+
+### Follow-Up
+
+How could you decide what sound and light level is appropriate for this program?  It isn't safe to try this with real lightning outside, but what measurements could we take and what values could we display?  
