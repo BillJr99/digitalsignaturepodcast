@@ -71,4 +71,10 @@ Here's my finished product, available at [https://www.billmongan.com/banana-musi
 
 ### Follow-Up
 
+#### More Notes?
+
 How might you change this program to allow for 18 notes instead of 36?  What values would change in your program?
+
+#### A Musical Connection
+
+How might you show which note actually played?  Look up a table of note frequencies, and display the frequency actually played.  Using an array, you could create a table of notes and frequencies, and choose the true note closest to a particular frequency!
