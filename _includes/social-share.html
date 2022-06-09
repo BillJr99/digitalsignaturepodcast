@@ -8,7 +8,7 @@
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 15px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -126,12 +126,10 @@
 }
 </style>
 
-<div>
-  <h4>Share on Social</h4>
+  Share on Social: 
+  
+  <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="fa fa-twitter"></a> 
 
-  <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="fa fa-twitter"></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="fa fa-facebook"></a> 
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="fa fa-twitter"></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" class="fa fa-twitter"></a>
-</div>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" class="fa fa-linkedin"></a> 

@@ -1,11 +1,10 @@
 <hr />
-{% include social-share.html %}
 {% include utterances.html %}
 
 <footer>
 
 <div class="container">
-    <p>Subscribe <a href="{{ "/podcast.xml" | prepend: site.baseurl }}">via RSS</a> | Licensed under CC-BY</p>
+    <p>{% include social-share.html %} | Subscribe <a href="{{ "/podcast.xml" | prepend: site.baseurl }}">via RSS</a> | Licensed under CC-BY</p>
 </div>    
 
 </footer>
