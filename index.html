@@ -11,87 +11,97 @@ layout: default
     <p>Join us for conversations with guests with many different and unique experiences to learn about how you can launch your own passions into careers and opportunities in computing and technology.  We will also feature materials and activities at all levels that you, families, teachers, and anyone can try out at home to experience a &quot;day in the life&quot; of each of our guests.</p>
 
     <h1 class="label">Episodes</h1>
-    <div class="card-grid">
-        {% assign first_post = site.posts.first %}
-        <div class="cards first">
-            <h1 class="label reversed">Latest Episode</h1>
-            <div class="center-content">
-                <div class="seven columns">
-                    <h2>
-                        <a class="post-link" href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a>
-                    </h2>
-                    
-                    {% if first_post.thumbnail %}
-                        <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ first_post.thumbnail }}">
-                    {% endif %}
-                    
-                    <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
-                    <p>{{ first_post.summary }} </p> 
-                    
-                    {% if first_post.activitytitle and first_post.activitydescription %}
-                    <p>Activity: {{  first_post.activitytitle }}</p>
-                    <!--<p>{{ first_post.activitydescription }}</p>-->
-                    {% endif %}
-                </div>
-                <div class="four columns center-content">
-                    <p>
-                    {% if first_post.filetype contains "audio" %}
-                        <a href="{{ first_post.file }}" class="button button-primary">Listen Now</a>    
-                    {% elsif first_post.filetype contains "youtube" %}
-                        <a href="https://www.youtube.com/watch?v={{ first_post.file }}" class="button button-primary">Watch Now</a> 
-                    {% else %}
-                        <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.file }}">Download Now</a> 
-                    {% endif %}
-                    </p>
-                    
-                    {% if first_post.activitylink %}
+    {% if site.posts.size > 0 %}
+        <div class="card-grid">
+            {% assign first_post = site.posts.first %}
+            <div class="cards first">
+                <h1 class="label reversed">Latest Episode</h1>
+                <div class="center-content">
+                    <div class="seven columns">
+                        <h2>
+                            <a class="post-link" href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a>
+                        </h2>
+                        
+                        {% if first_post.thumbnail %}
+                            <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ first_post.thumbnail }}">
+                        {% endif %}
+                        
+                        <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
+                        <p>{{ first_post.summary }} </p> 
+                        
+                        {% if first_post.activitytitle and first_post.activitydescription %}
+                        <p>Activity: {{  first_post.activitytitle }}</p>
+                        <!--<p>{{ first_post.activitydescription }}</p>-->
+                        {% endif %}
+                    </div>
+                    <div class="four columns center-content">
                         <p>
-                            <a href="{{ first_post.activitylink}}" class="button button-primary">Try the Activity</a>
+                        {% if first_post.filetype contains "audio" %}
+                            <a href="{{ first_post.file }}" class="button button-primary">Listen Now</a>    
+                        {% elsif first_post.filetype contains "youtube" %}
+                            <a href="https://www.youtube.com/watch?v={{ first_post.file }}" class="button button-primary">Watch Now</a> 
+                        {% else %}
+                            <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.file }}">Download Now</a> 
+                        {% endif %}
                         </p>
-                    {% endif %}
-                </div>
-            </div>            
-        </div>
+                        
+                        {% if first_post.activitylink %}
+                            <p>
+                                <a href="{{ first_post.activitylink}}" class="button button-primary">Try the Activity</a>
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>            
+            </div>
         
-        {% for post in site.posts offset:1 %}
-            <div class="cards">
-            <h2 style="text-align: center;">
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            {% if post.thumbnail %}
-                <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ post.thumbnail }}">
-            {% endif %}        
-            <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-            <p>{{ post.summary }} </p>
-                {% if post.activitytitle and post.activitydescription %}
-                    <p>Activity: {{  post.activitytitle }}</p>
-                {% endif %}   
-            <!--
-            {% if post.activitylink %}
-                <p><a href="{{ post.activitylink}}" class="button button-primary">Try the Activity</a></p>
-            {% endif %}       
-            -->
-            </div>
-        {% endfor %}
-    </div>
-
+            {% if site.posts.size > 1 %}
+                {% for post in site.posts offset:1 %}
+                    <div class="cards">
+                    <h2 style="text-align: center;">
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    {% if post.thumbnail %}
+                        <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ post.thumbnail }}">
+                    {% endif %}        
+                    <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+                    <p>{{ post.summary }} </p>
+                        {% if post.activitytitle and post.activitydescription %}
+                            <p>Activity: {{  post.activitytitle }}</p>
+                        {% endif %}   
+                    <!--
+                    {% if post.activitylink %}
+                        <p><a href="{{ post.activitylink}}" class="button button-primary">Try the Activity</a></p>
+                    {% endif %}       
+                    -->
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    {% else %}
+        <p>Coming Soon!</p>
+    {% endif %}
+    
+    
     <h1 class="label">Activities</h1>
-    <div class="card-grid">
-        {% for activity in site.activities %}
-            <div class="cards">      
-            <h2 style="text-align: center;">
-              <a class="post-link" href="{{ activity.permalink | prepend: site.baseurl }}">{{ activity.title }}</a>
-            </h2>
-            {% if activity.thumbnail %}
-                <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ activity.thumbnail }}">
-            {% endif %}         
-            <p class="meta">{{ activity.gradelevel | downcase }} {{ activity.subject | downcase }} - {{ activity.category | downcase }}</p>
-            <p>{{ activity.summary }} </p>
-            <!--
-            <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity</a></p>
-            -->
-            </div>
-        {% endfor %}
-    </div>
-
+    {% if site.activities.size > 0 %}
+        <div class="card-grid">
+            {% for activity in site.activities %}
+                <div class="cards">      
+                <h2 style="text-align: center;">
+                  <a class="post-link" href="{{ activity.permalink | prepend: site.baseurl }}">{{ activity.title }}</a>
+                </h2>
+                {% if activity.thumbnail %}
+                    <img style="float: left; padding: 0px 10px 5px 0px; max-width: 128px;" src="{{ activity.thumbnail }}">
+                {% endif %}         
+                <p class="meta">{{ activity.gradelevel | downcase }} {{ activity.subject | downcase }} - {{ activity.category | downcase }}</p>
+                <p>{{ activity.summary }} </p>
+                <!--
+                <p><a href="{{ activity.permalink | prepend: site.baseurl }}" class="button button-primary">Try the Activity</a></p>
+                -->
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Coming Soon!</p>
+    {% endif %}
 </div>
