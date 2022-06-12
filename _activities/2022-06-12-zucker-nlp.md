@@ -117,134 +117,49 @@ df.head()
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe" style="max-width: 100%">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
-      <th>job_id</th>
       <th>title</th>
       <th>location</th>
-      <th>department</th>
-      <th>salary_range</th>
       <th>company_profile</th>
-      <th>description</th>
       <th>requirements</th>
-      <th>benefits</th>
-      <th>telecommuting</th>
-      <th>has_company_logo</th>
-      <th>has_questions</th>
-      <th>employment_type</th>
-      <th>required_experience</th>
-      <th>required_education</th>
-      <th>industry</th>
-      <th>function</th>
       <th>fraudulent</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>1</td>
       <td>Marketing Intern</td>
       <td>US, NY, New York</td>
-      <td>Marketing</td>
-      <td>NaN</td>
       <td>We're Food52, and we've created a groundbreaki...</td>
-      <td>Food52, a fast-growing, James Beard Award-winn...</td>
       <td>Experience with content management systems a m...</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>Other</td>
-      <td>Internship</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Marketing</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>2</td>
       <td>Customer Service - Cloud Video Production</td>
       <td>NZ, , Auckland</td>
-      <td>Success</td>
-      <td>NaN</td>
       <td>90 Seconds, the worlds Cloud Video Production ...</td>
-      <td>Organised - Focused - Vibrant - Awesome!Do you...</td>
       <td>What we expect from you:Your key responsibilit...</td>
-      <td>What you will get from usThrough being part of...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>Full-time</td>
-      <td>Not Applicable</td>
-      <td>NaN</td>
-      <td>Marketing and Advertising</td>
-      <td>Customer Service</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>3</td>
       <td>Commissioning Machinery Assistant (CMA)</td>
       <td>US, IA, Wever</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Valor Services provides Workforce Solutions th...</td>
-      <td>Our client, located in Houston, is actively se...</td>
       <td>Implement pre-commissioning and commissioning ...</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>4</td>
       <td>Account Executive - Washington DC</td>
       <td>US, DC, Washington</td>
-      <td>Sales</td>
-      <td>NaN</td>
-      <td>Our passion for improving quality of life thro...</td>
-      <td>THE COMPANY: ESRI – Environmental Systems Rese...</td>
       <td>EDUCATION: Bachelor’s or Master’s in GIS, busi...</td>
-      <td>Our culture is anything but corporate—we have ...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>Full-time</td>
-      <td>Mid-Senior level</td>
-      <td>Bachelor's Degree</td>
-      <td>Computer Software</td>
-      <td>Sales</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>5</td>
       <td>Bill Review Manager</td>
       <td>US, FL, Fort Worth</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>SpotSource Solutions LLC is a Global Human Cap...</td>
-      <td>JOB TITLE: Itemization Review ManagerLOCATION:...</td>
       <td>QUALIFICATIONS:RN license in the State of Texa...</td>
-      <td>Full Benefits Offered</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Full-time</td>
-      <td>Mid-Senior level</td>
-      <td>Bachelor's Degree</td>
-      <td>Hospital &amp; Health Care</td>
-      <td>Health Care Provider</td>
       <td>0</td>
     </tr>
   </tbody>
