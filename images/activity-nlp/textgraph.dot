@@ -1,0 +1,11 @@
+# Place the cursor inside "graph" to get some refactoring options
+
+digraph {
+    rankdir=LR;
+    
+    # To refactor nodes, place the cursor left to a node name
+    the -> cat [label="50%"];
+    the -> hat [label="50%"];
+    cat -> in [label="100%"];
+    in -> the [label="100%"];
+}
