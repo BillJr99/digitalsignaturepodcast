@@ -117,7 +117,7 @@ df.head()
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<table border="1" class="dataframe" style="max-width: 100%">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -464,18 +464,6 @@ test_docbin = create_docbin(test, 'test')
 !python -m spacy init config config.cfg --lang en --pipeline textcat --optimize efficiency --force
 ```
 
-    [38;5;3m⚠ To generate a more effective transformer-based config (GPU-only),
-    install the spacy-transformers package and re-run this command. The config
-    generated now does not use transformers.[0m
-    [38;5;4mℹ Generated config template specific for your use case[0m
-    - Language: en
-    - Pipeline: textcat
-    - Optimize for: efficiency
-    - Hardware: CPU
-    - Transformer: None
-    [38;5;2m✔ Auto-filled config with all values[0m
-    [38;5;2m✔ Saved config[0m
-    config.cfg
     You can now add your data and train your pipeline:
     python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
 
@@ -487,20 +475,7 @@ test_docbin = create_docbin(test, 'test')
 --paths.dev ./test.spacy --training.max_epochs 1
 ```
 
-    [38;5;4mℹ Saving to output directory: output[0m
-    [38;5;4mℹ Using CPU[0m
-    [1m
-    =========================== Initializing pipeline ===========================[0m
-    [2022-06-11 17:43:57,529] [INFO] Set up nlp object from config
-    [2022-06-11 17:43:57,539] [INFO] Pipeline: ['textcat']
-    [2022-06-11 17:43:57,542] [INFO] Created vocabulary
-    [2022-06-11 17:43:57,542] [INFO] Finished initializing nlp object
-    [2022-06-11 17:44:39,297] [INFO] Initialized pipeline components: ['textcat']
-    [38;5;2m✔ Initialized pipeline[0m
-    [1m
-    ============================= Training pipeline =============================[0m
-    [38;5;4mℹ Pipeline: ['textcat'][0m
-    [38;5;4mℹ Initial learn rate: 0.001[0m
+    ============================= Training pipeline =============================
     E    #       LOSS TEXTCAT  CATS_SCORE  SCORE 
     ---  ------  ------------  ----------  ------
       0       0          0.25       48.75    0.49
@@ -521,29 +496,24 @@ Finally, let's test the model on our remaining 20 percent that we saved earlier!
 !python -m spacy evaluate output/model-best test.spacy --output metrics.json
 ```
 
-    [38;5;4mℹ Using CPU[0m
-    [1m
-    ================================== Results ==================================[0m
+    ================================== Results ==================================
     
     TOK                 100.00
     TEXTCAT (macro F)   61.94 
     SPEED               195155
     
-    [1m
-    =========================== Textcat F (per label) ===========================[0m
+    =========================== Textcat F (per label) ===========================
     
                     P        R       F
     positive   100.00    14.94   26.00
     negative    95.83   100.00   97.87
     
-    [1m
-    ======================== Textcat ROC AUC (per label) ========================[0m
+
+    ======================== Textcat ROC AUC (per label) ========================
     
                ROC AUC
     positive      0.62
     negative      0.63
-    
-    [38;5;2m✔ Saved results to metrics.json[0m
     
 ### Follow Up
 How did they do?  For us, the model didn't do so well.  There are some things we can do to improve our results.  Can you think of some reasons why this might be, and what some of these things are?
