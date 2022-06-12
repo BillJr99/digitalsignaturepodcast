@@ -295,7 +295,9 @@ df.loc[0].company_profile
 
     "We're Food52, and we've created a groundbreaking and award-winning cooking site. We support, connect, and celebrate home cooks, and give them everything they need in one place.We have a top editorial, business, and engineering team. We're focused on using technology to find new and better ways to connect people around their specific food interests, and to offer them superb, highly curated information about food and cooking. We attract the most talented home cooks and contributors in the country; we also publish well-known professionals like Mario Batali, Gwyneth Paltrow, and Danny Meyer. And we have partnerships with Whole Foods Market and Random House.Food52 has been named the best food website by the James Beard Foundation and IACP, and has been featured in the New York Times, NPR, Pando Daily, TechCrunch, and on the Today Show.We're located in Chelsea, in New York City."
 
-Below, what do you notice about the number of fraudulent entries in the dataset?  Do you think our algorithm will do better at classifying job posts that are fraudulent or non-fraudulent?  Often, it is better to have about the same number of training examples for each category (called a <strong>class</strong>) that we want to train on.  What do you think we can do about that to help even things up?
+##### Exploring the Dataset as a Whole
+
+Often, it is helpful to explore the data in its entirety rather than one row at a time.  Let's see how many fraudulent job postings there are in the example set.
 
 ```python
 # Visualizing how many job postings are actually fraudulent 
@@ -313,6 +315,8 @@ print(fraudulent_series.value_counts())
 <p align="center">
 <img style="max-width:100%;" alt="Hide and Seek Flowchart" src="/images/activity-nlp/barchart.png">
 </p>    
+
+What do you notice about the number of fraudulent entries in the dataset?  Do you think our algorithm will do better at classifying job posts that are fraudulent or non-fraudulent?  Often, it is better to have about the same number of training examples for each category (called a <strong>class</strong>) that we want to train on.  What do you think we can do about that to help even things up?
 
 #### Training a Model
 
