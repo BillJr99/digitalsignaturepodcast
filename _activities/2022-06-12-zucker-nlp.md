@@ -152,6 +152,7 @@ df.head()
     <tr>
       <td>Account Executive - Washington DC</td>
       <td>US, DC, Washington</td>
+      <td>THE COMPANY: ESRI – Environmental Systems Rese...</td>
       <td>EDUCATION: Bachelor’s or Master’s in GIS, busi...</td>
       <td>0</td>
     </tr>
