@@ -37,7 +37,7 @@ If it asks you to select a <strong>branch</strong>, select the one called <stron
 Now that we have the notebook open, we'll use the notebook to:
 
 1. Download the training examples of job descriptions (some of which are legitimate and some of which are fraudulent)
-2. Read them into the machine learning algorithm (using a Natural Language Processing library called **spacy**) 
+2. Read them into the machine learning algorithm (using a Natural Language Processing library called **spaCy**) 
 3. Use the algorithm to train a model which ones are legitimate and which ones are not so that it can build its model
 4. Test the model by classifying new text as legitimate or fraudulent
 
@@ -58,7 +58,7 @@ First, we'll download the example job description files.  After doing this, you 
 %cd NLPDemo
 ```
 
-Next, click the play button next to the snippet that says `!pip install -r requirements.txt`.  This will install the spacy library and the other library functions from the Internet that will help us to build our model.  It will look like this, and when it is done, there might be a button to <strong>Restart</strong> at the bottom (go ahead and click on it if you see this).
+Next, click the play button next to the snippet that says `!pip install -r requirements.txt`.  This will install the spaCy library and the other library functions from the Internet that will help us to build our model.  It will look like this, and when it is done, there might be a button to <strong>Restart</strong> at the bottom (go ahead and click on it if you see this).
 
 ```python
 # Installing all the required libraries 
@@ -236,7 +236,7 @@ What do you notice about the number of fraudulent entries in the dataset?  Do yo
 
 #### Training a Model
 
-We'll use the scapy library to read this dataset and look at the fraudulent/non-fraudulent column to find patterns among the job posting training data.  For example, it might find that jobs with very short or very long descriptions tend to be fraudulent (what would happen to legitimate jobs that happen to have long or short descriptions, if this were to occur?).  It might find that jobs with certain words in them tend to be fake.  Unfortunately, it might find that jobs from certain zip codes tend to be fake, even though that's not really the case, because it just happens to see those patterns in the training data.  What can we do to ensure that algorithms don't train on potentially discriminatory inputs?
+We'll use the spaCy library to read this dataset and look at the fraudulent/non-fraudulent column to find patterns among the job posting training data.  For example, it might find that jobs with very short or very long descriptions tend to be fraudulent (what would happen to legitimate jobs that happen to have long or short descriptions, if this were to occur?).  It might find that jobs with certain words in them tend to be fake.  Unfortunately, it might find that jobs from certain zip codes tend to be fake, even though that's not really the case, because it just happens to see those patterns in the training data.  What can we do to ensure that algorithms don't train on potentially discriminatory inputs?
 
 For now, go ahead and run the training commands:
 
@@ -349,7 +349,7 @@ test = data[split:]
 ```python
 # Function to convert the data to spaCy's binary format 
 def create_docbin(dataset, output_name):
-    # Creating a blank spacy pipeline to serve as a tokenizer
+    # Creating a blank spaCy pipeline to serve as a tokenizer
     nlp = spacy.blank('en')
     # Creating a DocBin object to hold spaCy documents
     doc_bin = DocBin()
