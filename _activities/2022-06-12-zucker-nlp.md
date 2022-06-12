@@ -375,9 +375,9 @@ test_docbin = create_docbin(test, 'test')
     train set contains 14303 documents
     test set contains 3576 documents
 
+##### Allowing the Algorithm to Generate the Model
 
-## Training the Model
-
+Now, we're ready to generate the model itself.  This involves reading all the training documents, so it takes a little while.  Come back in 5 to 10 minutes and it should be ready to continue.  You can hit the &quot;stop&quot; button (which is where the play button usually is on the left while the code is running) to quit this process at any time - you can move on with the training model it has generated so far if you don't want to wait for it to finish.
 
 ```python
 # Creating the configuration file for model training
