@@ -435,7 +435,15 @@ Finally, let's test the model on our remaining 20 percent that we saved earlier!
     positive      0.62
     negative      0.63
     
-### Follow Up
+### The Finished Project
+
+Here's the finished product, available at [https://replit.com/@BillJr99/nlp-demo](https://replit.com/@BillJr99/nlp-demo):
+
+<p align="center">
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@BillJr99/nlp-demo?embed=true"></iframe>
+</p>
+    
+### Follow-Up
 How did they do?  For us, the model didn't do so well.  There are some things we can do to improve our results.  Can you think of some reasons why this might be, and what some of these things are?
 
 1. How can we improve our current classification model?  For example, how can we improve the imbalance of examples between the fraudulent and non-fraudulent training classes?
