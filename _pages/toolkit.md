@@ -45,6 +45,7 @@ Here, we will curate materials including lesson plans, professional organization
 
 ## Professional Organizations
 * [Computer Science Teachers Association (CSTA)](https://csteachers.org/)
+* [ACM Special Interest Group in Computer Science Education (SIGCSE)](https://www.sigcse.org/)
 
 ## Resources for Students
 * [American Computer Science League](https://www.acsl.org/)
