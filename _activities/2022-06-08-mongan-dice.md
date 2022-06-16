@@ -16,10 +16,6 @@ summary: "In this activity, we will introduce arrays to store and display a coun
 
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/6/62/Dice01.jpg"
 
-embedvideo: https://www.youtube.com/watch?v=Mxesac55Puo
-lessonplans:
-  - title: Test Lesson Plan
-    link: http://www.google.com
 ---
 
 We can generate random numbers using the Micro:bit.  In [another activity](./prng), you can explore how these random numbers are calculated by a computer, but this is actually built into the Micro:bit as a step (also called a &quot;function&quot;) that you can use anytime you like with just a single block.  You can tell the random number step the range of values you want (for example, between 1 and 10); these numbers are called the function's &quot;parameters&quot;, since you can decide what they are every time you call the function with the <strong>pick random number</strong> step.
