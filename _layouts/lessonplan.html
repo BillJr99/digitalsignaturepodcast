@@ -14,7 +14,7 @@ layout: default
             <h2>{% assign words = page.gradelevel | split: ' ' %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% assign words = page.subject | split: ' ' %}{% for word in words %}{{ word | capitalize }} {% endfor %}({{ page.category | capitalize }})</h2>
             <h3>{{ page.course }}</h3>
             <div>
-                <i>{{page.duration}} - {{ page.summary }}</i>
+                <i>{{ page.summary }} ({{page.duration}})</i>
 
                 <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                     {{ page.date | date: "%b %-d, %Y" }}</time> | By {{ page.authors }}
