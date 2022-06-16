@@ -36,6 +36,8 @@ exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
 collections:
   activities:
     output: true
+  lessonplans:
+    output: true
     
 # Analytics
 analytics:

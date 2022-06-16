@@ -42,6 +42,15 @@ layout: default
         <h2>Video</h2>
         {{ page.embedvideo }}
         {% endif %}
+        
+        {% if page.lessonplans %}
+        <h2>Lesson Plans</h2>
+        <ul>
+        {% for plan in page.lessonplans %}
+        <li><a href="{{ plan.plan.link }}">{{ plan.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}        
     </div>
 
 </article>

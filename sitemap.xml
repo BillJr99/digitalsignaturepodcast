@@ -14,5 +14,9 @@ exclude: true
   <url>
     <loc>{{site.url}}{{site.baseurl}}{{ item.url }}</loc>
     <priority>0.8</priority>
+  </url>{% endif %}{% endfor %}{% for item in site.lessonplans %}{% if item.exclude != true %}
+  <url>
+    <loc>{{site.url}}{{site.baseurl}}{{ item.url }}</loc>
+    <priority>0.8</priority>
   </url>{% endif %}{% endfor %}
 </urlset>
