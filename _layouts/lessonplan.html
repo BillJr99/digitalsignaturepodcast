@@ -7,13 +7,14 @@ layout: default
 <article class="post">
 
     <div class="center-content">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">Lesson Plan: {{ page.title }}</h1>
     </div>
     <div class="container extra-padding">
         <div>
             <h2>{% assign words = page.gradelevel | split: ' ' %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% assign words = page.subject | split: ' ' %}{% for word in words %}{{ word | capitalize }} {% endfor %}({{ page.category | capitalize }})</h2>
+            <h3>{{ page.course }}</h3>
             <div>
-                <i>{{ page.summary }}</i>
+                <i>{{page.duration}} - {{ page.summary }}</i>
 
                 <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                     {{ page.date | date: "%b %-d, %Y" }}</time> | By {{ page.authors }}
@@ -23,8 +24,44 @@ layout: default
         
         <div style="clear: both;"></div>
         
-        <h2>Lesson Plan</h2>
+        {% if page.objectives %}
+        <h2>Lesson Objectives</h2>
+        <ul>
+        {% for objective in page.objectives %}
+        <li>{{ objective }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+        
+        {% if page.standards %}
+        <h2>Relevant Curricular Standards</h2>
+        <ul>
+        {% for standard in page.standards %}
+        <li>{{ standard }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}        
+
+        {% if page.materials %}
+        <h2>Materials</h2>
+        <ul>
+        {% for material in page.materials %}
+        <li>{{ material }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+        
+        <h2>Lesson Content</h2>
         {{ content }}
+        
+        {% if page.homework %}
+        <h2>Homework</h2>
+        <ul>
+        {% for hw in page.homework %}
+        <li>{{ hw }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}        
     </div>
 
 </article>
