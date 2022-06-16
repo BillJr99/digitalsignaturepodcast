@@ -51,6 +51,6 @@ Here, we will curate materials including lesson plans, professional organization
 * [American Computer Science League](https://www.acsl.org/)
 * [FIRST Robotics](https://www.firstinspires.org/robotics/frc)
 
-## Scholarship and Award Opportunities
+### Scholarship and Award Opportunities
 * [Computer Science Honor Society](https://www.csteachers.org/page/computer-science-honor-society)
 * [NCWIT Award for Aspirations in Computing](https://www.aspirations.org/award-programs/apply-for-the-award-for-aic)
