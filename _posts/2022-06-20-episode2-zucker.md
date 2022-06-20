@@ -15,5 +15,5 @@ explicit: "no"
 keywords: "nlp"
 block: "no"
 voices: "Bill Mongan and Adam Zucker"
-thumbnail: "https://i3.ytimg.com/vi/CP7jEBL4CZM/maxresdefault.jpg"
+thumbnail: "https://i.ytimg.com/vi/CP7jEBL4CZM/hqdefault.jpg"
 ---
