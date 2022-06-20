@@ -15,6 +15,9 @@ date: 2022-06-12
 summary: "In this activity, we will use Natural Language Processing to read job descriptions and determine which ones are for legitimate job opportunities using Python and Google Colab."
 
 thumbnail: "/images/activity-nlp/textgraph.png"
+
+embed: 5MpNarY6HsE
+embedtype: "youtube"
 ---
 
 One field of computing studies the application of <strong>Machine Learning</strong> to process the written word.  That could include text like the words on this webpage, or in a book, or generated on social networks.  This is a field called <strong>Natural Language Processing</strong>, or NLP.  For example, you might have read someone's social media page, or comment on a web article, and wondered if it was real, or if it was generated automatically by a &quot;bot&quot;.  Today, we will use NLP to help determine if job descriptions are legitimate (that is, do they actually represent real job opportunities).  

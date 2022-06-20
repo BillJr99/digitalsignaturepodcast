@@ -38,9 +38,21 @@ layout: default
         <h2>Activity</h2>
         {{ content }}
         
-        {% if page.embedvideo %}
-        <h2>Video</h2>
-        {{ page.embedvideo }}
+        {% if page.embed %}
+        <div class="container center-content">
+        <div>
+        {% if page.embedtype contains "audio" %}
+            <h2>Audio Stream</h2>
+            <audio controls>
+                <source src="{{ page.embed }}" type="audio/mp3">
+            </audio>
+        {% elsif page.embedtype contains "youtube" %}
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.embed}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        {% else %}
+            {{page.embed}}
+        {% endif %}
+        </div>
         {% endif %}
         
         {% if page.lessonplans %}
