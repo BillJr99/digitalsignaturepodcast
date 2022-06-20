@@ -25,32 +25,37 @@ layout: default
     <a href="{{ site.baseurl }}{{ page.file }}" class="button u-full-height" download="{{ page.title }}">Download Now</a>
     </div>
     -->
+    </div>
+    
+    <p></p>
+        
+    <div>
+        {{ content }}
+        
+        {% if page.activitylink and page.activitytitle and page.activitydescription %}
+        <p></p>
+        
+        <div class="center-content">
+            <h3>Activity: {{ page.activitytitle }}</h3>
         </div>
-<div>
-    {{ content }}
-    
-    {% if page.activitylink and page.activitytitle and page.activitydescription %}
-    <div class="center-content">
-        <h3>Activity: {{ page.activitytitle }}</h3>
+        <br>
+        <div class="center-content">
+        <p>
+            {{ page.activitydescription }}
+        </p>    
+        </div>
+        <br>
+        <div class="center-content">    
+        <p>    
+            <a href="{{ page.activitylink }}" class="button u-full-height">Try it Out!</a>
+        </p>
+        </div>    
+        {% endif %}
+        
+        <div class="four columns center-content">
+            <p><em>Keywords - {{ page.keywords }}</em></p>
+        </div>    
     </div>
-    <br>
-    <div class="center-content">
-    <p>
-        {{ page.activitydescription }}
-    </p>    
-    </div>
-    <br>
-    <div class="center-content">    
-    <p>    
-        <a href="{{ page.activitylink }}" class="button u-full-height">Try it Out!</a>
-    </p>
-    </div>    
-    {% endif %}
-    
-    <div class="four columns center-content">
-        <p><em>Keywords - {{ page.keywords }}</em></p>
-    </div>    
-</div>
 
     
 </article>

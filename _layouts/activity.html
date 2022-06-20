@@ -35,9 +35,6 @@ layout: default
         
         <div style="clear: both;"></div>
         
-        <h2>Activity</h2>
-        {{ content }}
-        
         {% if page.embed %}
         <div class="container center-content">
         <div>
@@ -62,7 +59,10 @@ layout: default
         <li><a href="{{ plan.plan.link }}">{{ plan.title }}</a></li>
         {% endfor %}
         </ul>
-        {% endif %}        
+        {% endif %}         
+        
+        <h2>Activity</h2>
+        {{ content }}       
     </div>
 
 </article>
