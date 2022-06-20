@@ -36,7 +36,6 @@ layout: default
         <div style="clear: both;"></div>
         
         {% if page.embed %}
-        <div class="container center-content">
         <div>
         {% if page.embedtype contains "audio" %}
             <h2>Audio Stream</h2>
@@ -50,11 +49,9 @@ layout: default
             {{page.embed}}
         {% endif %}
         </div>
-        </div>
         {% endif %}
         
         {% if page.lessonplans %}
-        <div class="container center-content">
         <div>
         <h2>Lesson Plans</h2>
         <ul>
@@ -62,7 +59,6 @@ layout: default
         <li><a href="{{ plan.plan.link }}">{{ plan.title }}</a></li>
         {% endfor %}
         </ul>
-        </div>
         </div>
         {% endif %}         
         
