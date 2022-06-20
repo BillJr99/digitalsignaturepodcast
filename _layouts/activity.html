@@ -36,15 +36,19 @@ layout: default
         <div style="clear: both;"></div>
         
         {% if page.embed %}
-        <div style="text-align:center">
+        <div>
         {% if page.embedtype contains "audio" %}
             <h2>Audio Stream</h2>
+            <div style="text-align:center">
             <audio controls>
                 <source src="{{ page.embed }}" type="audio/mp3">
             </audio>
+            </div>
         {% elsif page.embedtype contains "youtube" %}
             <h2>Video</h2>
+            <div style="text-align:center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.embed}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            </div>
         {% else %}
             {{page.embed}}
         {% endif %}
