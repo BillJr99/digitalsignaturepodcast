@@ -38,7 +38,7 @@ If you run this, every time you tap the P1 tin foil while holding the ground tin
 
 ### Changing the Sound
 
-<span>\\(base \times 2^{\frac{1}{12}}^{step}\\)</span> 
+<span>\\(base \times {2^{\frac{1}{12}}}^{step}\\)</span> 
 
 where **base** is some root note frequency, and step is the number of halfsteps (like piano keys keys) above or below that root note frequency.  We can use our Middle A note as our root, which is 440 Hz.  To simplify things and reduce the number of exponents in our project, we can use a rough value for <span>\\(2^{\frac{1}{12}}\\)</span>:
 
