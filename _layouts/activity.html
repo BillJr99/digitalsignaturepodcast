@@ -50,21 +50,28 @@ layout: default
             {{page.embed}}
         {% endif %}
         </div>
-        <div style="clear: both;"></div>
+        </div>
         {% endif %}
         
         {% if page.lessonplans %}
+        <div class="container center-content">
+        <div>
         <h2>Lesson Plans</h2>
         <ul>
         {% for plan in page.lessonplans %}
         <li><a href="{{ plan.plan.link }}">{{ plan.title }}</a></li>
         {% endfor %}
         </ul>
-        <div style="clear: both;"></div>
+        </div>
+        </div>
         {% endif %}         
         
+        <div class="container center-content">
+        <div>
         <h2>Activity</h2>
         {{ content }}       
+        </div>
+        </div>
     </div>
 
 </article>
