@@ -10,7 +10,9 @@ The reality is that each of us has taken a different journey into computing and 
 
 ### Podcast Trailer
 
+<div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-Pd37X0WlFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### What is a Digital Signature?
 A digital signature is file that represents your individual identity on the Internet.  It's often a couple of unique numbers that, when used together, can create an electronic "fingerprint" or signature value that only you could likely have created.  Like signing a receipt or contract, this signature value (sometimes called a "certificate") helps convince someone that you are who you claim to be.  If you've ever seen the "padlock" icon on your web browser when dealing with your bank online or some other website, this, in part, represents that their digital signature has been checked to verify their identity for you.
