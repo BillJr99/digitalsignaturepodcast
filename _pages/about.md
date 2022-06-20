@@ -8,6 +8,10 @@ The Digital Signature Podcast was started in 2022 with a goal of better connecti
 
 The reality is that each of us has taken a different journey into computing and technology.  Some of us gained experience as children playing with gadgets and games, some had passions in the arts and humanities and saw connections with computing and technology, some majored in one of several computing fields in college, and some were curious about the devices and systems they use in their everyday lives.  Whether you're interested in building robotic systems and devices, writing software, testing that software, or working with the people who will use those systems to ensure that their needs are thoughtfully captured through design, computing systems can't be successful without a plethora of diverse experiences, skills, and backgrounds.  The Digital Signature Podcast hosts conversations with guests whose expertise and experiences span this spectrum, and offers activities you can try at home to experience a "day in the life" of each of our guests.
 
+### Podcast Trailer
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Pd37X0WlFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### What is a Digital Signature?
 A digital signature is file that represents your individual identity on the Internet.  It's often a couple of unique numbers that, when used together, can create an electronic "fingerprint" or signature value that only you could likely have created.  Like signing a receipt or contract, this signature value (sometimes called a "certificate") helps convince someone that you are who you claim to be.  If you've ever seen the "padlock" icon on your web browser when dealing with your bank online or some other website, this, in part, represents that their digital signature has been checked to verify their identity for you.
 
