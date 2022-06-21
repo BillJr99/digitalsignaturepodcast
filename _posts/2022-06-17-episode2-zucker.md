@@ -10,7 +10,6 @@ activitydescription: "In this activity, we will use Natural Language Processing 
 summary: "The Digital Signature Podcast Episode 2 with Adam Zucker"
 description: "Today, we sit down with Adam Zucker, who is a Staff Data Scientist, to learn about his experience with Data Science, Machine Learning, and Natural Language Processing."
 duration: "30:21"
-length: "30:21"
 explicit: "no"
 keywords: "nlp"
 block: "no"

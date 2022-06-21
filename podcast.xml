@@ -35,9 +35,9 @@
             <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
             <itunes:image href="{{ site.url }}/images/itunes.png" />
             {% if post.filetype contains "youtube" %}
-                <enclosure url="https://www.youtube.com/watch?v={{ post.file }}" length="{{ post.length }}" type="video/mp4"/>
+                <enclosure url="https://www.youtube.com/watch?v={{ post.file }}" length="{{ post.duration }}" type="video/mp4"/>
             {% else %}
-                <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/> 
+                <enclosure url="{{ post.file }}" length="{{ post.duration }}" type="audio/mp3"/> 
             {% endif %}            
             <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
             <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
