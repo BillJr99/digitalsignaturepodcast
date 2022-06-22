@@ -15,6 +15,7 @@ Here, we will curate materials including lesson plans, professional organization
   
 ## Curricular Resources and Activities
 * [Pixel Pandemonium: an unplugged activity for illustrating CS Principles](https://www.billmongan.com/Ursinus-CS173/DrawingCanvas/Replay) 
+* [Hour of Code](https://hourofcode.com/)
 
 ### Pedagogy
 * [Peer Instruction for CS](http://peerinstruction4cs.org/)
