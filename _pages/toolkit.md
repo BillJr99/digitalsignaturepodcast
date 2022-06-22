@@ -16,12 +16,17 @@ Here, we will curate materials including lesson plans, professional organization
 ## Curricular Resources and Activities
 * [Pixel Pandemonium: an unplugged activity for illustrating CS Principles](https://www.billmongan.com/Ursinus-CS173/DrawingCanvas/Replay) 
 * [Hour of Code](https://hourofcode.com/)
+* [CS Curricular Planning and Pennsylvania Standards](https://www.pattan.net/Supports/STEM/computer-science/CS-Administrator-Toolkit/CS-Curriculum-Planning)
+* [PBS Family Night: Coding by PaTTAN](https://pennsylvaniapbs.org/digital/family-night-coding/)
+* [CS Research Practitioner Partnerships](https://csedresearch.org/projects/our-projects/rpp-for-cs/)
 
 ### Pedagogy
 * [Peer Instruction for CS](http://peerinstruction4cs.org/)
 * [Code.org](https://code.org/)
 * [k12cs.org](https://k12cs.org/)
 * [CS Unplugged](https://www.csunplugged.org/en/)
+* [Pennsylvania Training and Technical Assistance Network (PaTTAN)](https://www.pattan.net/)
+  * [PaTTAN Teacher Toolkit](https://www.pattan.net/Supports/STEM/computer-science/CS-Teacher-Toolkit)
 
 ### Computing Across the Disciplines
 * [Equitable CS Education for Broader Workforce Preparation through Design Thinking and Ubiquitous Platforms](https://www.billmongan.com/posts/2022/05/remakelearningday/)
@@ -48,6 +53,7 @@ Here, we will curate materials including lesson plans, professional organization
 ## Professional Organizations
 * [Computer Science Teachers Association (CSTA)](https://csteachers.org/)
 * [ACM Special Interest Group in Computer Science Education (SIGCSE)](https://www.sigcse.org/)
+* [Philadelphia STEM Ecosystem](https://www.philastemeco.org/)
 
 ## Resources for Students
 * [American Computer Science League](https://www.acsl.org/)
