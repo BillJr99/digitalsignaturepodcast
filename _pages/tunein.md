@@ -11,4 +11,5 @@ You can watch or listen to our episodes on these platforms!
 * [Spotify](https://open.spotify.com/show/6XDlNn8O74YGZlNeOmpxlV)
 * [Anchor.fm](https://anchor.fm/william-mongan)
   * [Subscribe to the Anchor.fm RSS Feed](https://anchor.fm/s/a12340b4/podcast/rss)
+* [Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9hMTIzNDBiNC9wb2RjYXN0L3Jzcw)
 * [Subscribe to the RSS Feed](/podcast.xml)
