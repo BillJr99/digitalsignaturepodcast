@@ -19,6 +19,7 @@ Here, we will curate materials including lesson plans, professional organization
 * [CS Curricular Planning and Pennsylvania Standards](https://www.pattan.net/Supports/STEM/computer-science/CS-Administrator-Toolkit/CS-Curriculum-Planning)
 * [PBS Family Night: Coding by PaTTAN](https://pennsylvaniapbs.org/digital/family-night-coding/)
 * [CS Research Practitioner Partnerships](https://csedresearch.org/projects/our-projects/rpp-for-cs/)
+* [Connecting the micro:bit to the Internet-of-Things](https://www.billmongan.com/posts/2022/07/variotmicrobit/)
 
 ### Pedagogy
 * [Peer Instruction for CS](http://peerinstruction4cs.org/)
