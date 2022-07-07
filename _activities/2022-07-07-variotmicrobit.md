@@ -14,7 +14,7 @@ date: 2022-07-07
 
 summary: "we will integrate the BBC micro:bit with a ThingsBoard gateway called VarIOT using a wireless radio."
 
-thumbnail: "https://www.billmongan.com/files/media/2022-07-04-variotmicrobit/fig5.jpg"
+thumbnail: "/images/activity-variotmicrobit/fig5.jpg"
 ---
 
 In this article, we will integrate the [BBC micro:bit](https://microbit.org/) with a [ThingsBoard](https://thingsboard.io/) gateway called [VarIOT](https://drexel.edu/engineering/news-events/news/archive/2021/December/vip-project-helps-student-make-connections/).
@@ -58,18 +58,18 @@ I used a breadboard, jumper wires, and an ESP8266 WiFi Module to do this, as wel
 
 I connected the Rx pin of the WiFi module to P0 of the micro:bit, the Tx pin to P1, VCC and CH_EN to the 3V pin for power, and ground to the ground pin, as shown in the diagrams of the wiring diagram and pinout (shown below; image credit Alan Krantas via the [alankrantis/pxt-ESP8266_ThingSpeak](https://github.com/alankrantas/pxt-ESP8266_ThingSpeak) GitHub repository under an [MIT License](https://raw.githubusercontent.com/alankrantas/pxt-ESP8266_ThingSpeak/master/LICENSE)):
 
-![Wiring diagram - Alan Krantas GitHub under an MIT License](https://user-images.githubusercontent.com/44191076/57862847-9c235980-782b-11e9-9588-3e7fe76342ee.png)
+<img style="max-width:100%;" src="https://user-images.githubusercontent.com/44191076/57862847-9c235980-782b-11e9-9588-3e7fe76342ee.png" alt="Wiring diagram - Alan Krantas GitHub under an MIT License">
 
-![Pinout - Alan Krantas GitHub under an MIT License](https://user-images.githubusercontent.com/44191076/50428909-fc097a00-08f5-11e9-91f1-921d1b957f29.png)
+<img style="max-width:100%;" src="https://user-images.githubusercontent.com/44191076/50428909-fc097a00-08f5-11e9-91f1-921d1b957f29.png" alt="Pinout - Alan Krantas GitHub under an MIT License">
 
 Following these diagrams, I wired my WiFi module to the micro:bit as follows:
 
 <div style="text-align:center;">
-<img src="/files/media/2022-07-04-variotmicrobit/fig1.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 1">
-<img src="/files/media/2022-07-04-variotmicrobit/fig2.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 2">
-<img src="/files/media/2022-07-04-variotmicrobit/fig3.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 3">
-<img src="/files/media/2022-07-04-variotmicrobit/fig4.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 4">
-<img src="/files/media/2022-07-04-variotmicrobit/fig5.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 5">
+<img style="max-width:100%;"  src="/images/activity-variotmicrobit/fig1.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 1">
+<img style="max-width:100%;"  src="/images/activity-variotmicrobit/fig2.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 2">
+<img style="max-width:100%;"  src="/images/activity-variotmicrobit/fig3.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 3">
+<img style="max-width:100%;"  src="/images/activity-variotmicrobit/fig4.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 4">
+<img style="max-width:100%;"  src="/images/activity-variotmicrobit/fig5.jpg" alt="Finished WiFi to micro:bit breadboard wiring figure 5">
 </div>
 
 ### Writing the micro:bit Program
@@ -85,9 +85,7 @@ That's it!  You can now use VarIOT blocks to send data to the VarIOT gateway.  T
   * `Label`: temp
   * `Value`: 55
   
-That should do it!  When you view your gateway dashboard on the server, you should see this value appear.  Here is the code:
-
-![Finished Blocks for the VarIOT micro:bit integration test program](https://github.com/billjr99/variot-test/raw/master/.github/makecode/blocks.png)
+That should do it!  When you view your gateway dashboard on the server, you should see this value appear.  
 
 ### Programming the micro:bit Extension to Connect to VarIOT
 You don't have to do this step, but if you're interested, this section describes how I created the micro:bit extension blocks for use in your micro:bit program (to connect to VarIOT).

@@ -294,4 +294,3 @@ Here's my finished product, available at [https://www.billmongan.com/rock-paper-
 Here is the code in Python:
 <p align="center">
 <script src="https://gist.github.com/BillJr99/2e8019816a7b14746a600988fce855f1.js"></script>
-</a>
