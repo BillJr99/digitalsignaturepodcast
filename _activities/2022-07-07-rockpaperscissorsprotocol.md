@@ -67,7 +67,8 @@ def on_received_string(receivedString):
             sender = parse_float(receivedString.split(" ")[1])
             if sender != my_id:
                 protocol_state = 1
-                radio.send_string("response" + " " + convert_to_text(sender) + " " + convert_to_text(my_id))
+                radio.send_string("response" + " " + convert_to_text(sender) + " " \
+                                  + convert_to_text(my_id))
 ``` 
 
 ##### Receiving the Response Message
@@ -88,7 +89,8 @@ def on_received_string(receivedString):
             sender = parse_float(receivedString.split(" ")[2])
             if sender != my_id:
                 protocol_state = 2
-                radio.send_string("acknowledge" + " " + convert_to_text(sender) + " " + convert_to_text(my_id))
+                radio.send_string("acknowledge" + " " + convert_to_text(sender) + " " \
+                                  + convert_to_text(my_id))
 ```
 
 ##### Receiving the Acknowledge Message
@@ -106,7 +108,8 @@ def on_received_string(receivedString):
     elif receivedString.includes("response"):
         # same as before...
     elif receivedString.includes("acknowledge"):
-        if protocol_state == 1 and parse_float(receivedString.split(" ")[1]) == my_id and parse_float(receivedString.split(" ")[2]) == sender:
+        if protocol_state == 1 and parse_float(receivedString.split(" ")[1]) == my_id \
+           and parse_float(receivedString.split(" ")[2]) == sender:
             protocol_state = 2
 ```
 
@@ -138,7 +141,9 @@ When we press the A+B buttons together, we'll send our guess to the other player
 def on_button_pressed_ab():
     global protocol_state, sender, my_id
     if protocol_state == 2:
-        radio.send_string("play" + " " + convert_to_text(sender) + " " + convert_to_text(my_id) + " " + convert_to_text(rps))
+        radio.send_string("play" + " " + convert_to_text(sender) + " " \
+                          + convert_to_text(my_id) + " " \
+                          + convert_to_text(rps))
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
 ```
 
@@ -149,7 +154,9 @@ When we receive a `play` message, we can compare it with our own guess (if we've
 def on_button_pressed_ab():
     global protocol_state, sender, my_id
     if protocol_state == 2:
-        radio.send_string("play" + " " + convert_to_text(sender) + " " + convert_to_text(my_id) + " " + convert_to_text(rps))
+        radio.send_string("play" + " " + convert_to_text(sender) + " " \
+                          + convert_to_text(my_id) + " " \
+                          + convert_to_text(rps))
         protocol_state = 3
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
 ```
@@ -166,7 +173,8 @@ def on_received_string(receivedString):
     elif receivedString.includes("acknowledge"):
         # same as before...
     elif receivedString.includes("play"):
-        if protocol_state >= 2 and parse_float(receivedString.split(" ")[1]) == my_id and parse_float(receivedString.split(" ")[2]) == sender:
+        if protocol_state >= 2 and parse_float(receivedString.split(" ")[1]) == my_id \
+           and parse_float(receivedString.split(" ")[2]) == sender:
             opponent_rps = parse_float(receivedString.split(" ")[3])       
 ```
 
@@ -185,7 +193,8 @@ def on_received_string(receivedString):
     elif receivedString.includes("acknowledge"):
         # same as before...
     elif receivedString.includes("play"):
-        if protocol_state >= 2 and parse_float(receivedString.split(" ")[1]) == my_id and parse_float(receivedString.split(" ")[2]) == sender:
+        if protocol_state >= 2 and parse_float(receivedString.split(" ")[1]) == my_id \
+           and parse_float(receivedString.split(" ")[2]) == sender:
             opponent_rps = parse_float(receivedString.split(" ")[3])
             if protocol_state == 3:
                 check_play()
@@ -199,7 +208,9 @@ Similarly, we'll update the A+B button press to see if we have already received 
 def on_button_pressed_ab():
     global protocol_state, sender, my_id, rps
     if protocol_state >= 2:
-        radio.send_string("play" + " " + convert_to_text(sender) + " " + convert_to_text(my_id) + " " + convert_to_text(rps))
+        radio.send_string("play" + " " + convert_to_text(sender) + " " \
+                          + convert_to_text(my_id) + " " \
+                          + convert_to_text(rps))
         if protocol_state == 4:
             check_play()
         else:
