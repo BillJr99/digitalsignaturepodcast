@@ -92,48 +92,7 @@ You don't have to do this step, but if you're interested, this section describes
 
 To do this, I forked the [alankrantas/pxt-ESP8266_ThingSpeak](https://github.com/alankrantas/pxt-ESP8266_ThingSpeak) repository into my own extension, which I call [BillJr99/pxt-ESP8266_VarIOT](https://github.com/BillJr99/pxt-ESP8266_VarIOT), under an MIT license.
 
-All of the original repository's WiFi connection and TCP connection code applies here, so I was able to re-use that.  In effect, we will run our cURL command that we saw above to send telemetry data to the Gateway, but we'll get these values from a micro:bit!  I moved this code into a function called `doHTTP`, and created blocks that send an HTTP request to post data from the micro:bit as follows:
-
-```typescript
-    /**
-    * Connect to VarIOT and upload data. It would not upload anything if it failed to connect to Wifi or VarIOT.
-    */
-    //% block="Upload data to VarIOT|Endpoint = %endpoint|Label = %label|Value = %value"
-    //% endpoint.defl=mongan
-    //% label.defl=temp
-    //% value.defl=45
-    export function sendVarIOTTelemetry(endpoint: string, label: string, value: number) {
-        let body: string = "{\"" + label + "\": " + value + "}"
-        let str: string = "POST /" + endpoint + " HTTP/1.1\r\n" + "Content-Type: application/json" + "\r\n" + "Content-Length: " + body.length + "\r\n\r\n" + body + "\r\n\r\n"
-        doHTTP(str)
-    }
-
-    /**
-    * Connect to VarIOT and upload data given a device name. It would not upload anything if it failed to connect to Wifi or VarIOT.
-    */
-    //% block="Upload data to VarIOT|Endpoint = %endpoint|Device Name = %devicename|Label = %label|Value = %value"
-    //% endpoint.defl=mongan
-    //% devicename.defl="Mongan Gateway"
-    //% label.defl=temp
-    //% value.defl=45
-    export function sendVarIOTTelemetryByDeviceName(endpoint: string, devicename: string, label: string, value: number) {
-        let body: string = "{\"" + label + "\": " + value + ", \"sensorName\": \"" + devicename + "\"}"
-        let str: string = "POST /" + endpoint + " HTTP/1.1\r\n" + "Content-Type: application/json" + "\r\n" + "Content-Length: " + body.length + "\r\n\r\n" + body + "\r\n\r\n"
-        doHTTP(str)
-    }
-
-    /**
-    * Configure VarIOT gateway location
-    */
-    //% block="Configure VarIOT gateway location|URL/IP = %ip|Port = %port"
-    //% ip.defl=rpi4-variot
-    //% port.defl=5000
-    export function configureVarIOT(ip: string, port: string) {
-        variot_configured = true
-        variot_ip = ip
-        variot_port = port
-    }
-```
+All of the original repository's WiFi connection and TCP connection code applies here, so I was able to re-use that.  In effect, we will run our cURL command that we saw above to send telemetry data to the Gateway, but we'll get these values from a micro:bit!  I moved this code into a function called `doHTTP` so that I could create multiple post request endpoints, as you'll see in the code below.
 
 ### The Finished Project
 
