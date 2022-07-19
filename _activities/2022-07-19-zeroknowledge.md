@@ -169,6 +169,7 @@ The program below can be run twice (once as the sender and once as the receiver)
 
 What secrets could you exchange this way besides flipping a coin?  Modify this program to implement a protocol of your own design.
 
+Also, if you recall, we sent a custom random string to be hashed along with the coin toss in the Python program.  Why could we not just hash "Heads" or "Tails" by itself?  How might this have been used for cheating if we had not included some random string (sometimes called a "salt" because it is a sort of seasoning infused into the data)?
 ### The Finished Project
 
 Here's my finished product, available at [https://www.billmongan.com/minizeroknowledgecoinflip/](https://www.billmongan.com/minizeroknowledgecoinflip/):
