@@ -21,6 +21,8 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zero_knowledge_c
 
 Suppose you wanted to flip a coin and have the other person guess.  If they guess correctly, they get to go first at a game, or win some prize, so there is some incentive for both players to cheat.  If you don't have a coin sitting around, here's a button that will simulate one:
 
+<p align="center">
+<div>
 <div style="text-align: center; width: 100%;">
 <button id="click" type="button">Coin Toss</button> <span id="result"></span>
 <script>
@@ -41,6 +43,8 @@ Suppose you wanted to flip a coin and have the other person guess.  If they gues
         document.getElementById("result").innerHTML = coin;
     };
 </script>
+</div>
+</p>
 
 Worse yet, you might be flipping the coin and talking over the phone, or sending chat messages over the Internet, so you can't actually see each other.  How can you flip the coin in a way that you know both people are playing fairly?  
 
