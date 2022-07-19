@@ -166,6 +166,10 @@ The program below can be run twice (once as the sender and once as the receiver)
 
 <script src="https://gist.github.com/BillJr99/fa3d29475bf15bc92eb5f6c707685cd9.js"></script>
 
+## Follow-Up
+
+What secrets could you exchange this way besides flipping a coin?  Modify this program to implement a protocol of your own design.
+
 ### The Finished Project
 
 Here's my finished product, available at [https://www.billmongan.com/minizeroknowledgecoinflip/](https://www.billmongan.com/minizeroknowledgecoinflip/):
