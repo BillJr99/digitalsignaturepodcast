@@ -12,7 +12,7 @@ gitrepo: https://github.com/billjr99/variot-test
 authors: "William M. Mongan"
 date: 2022-07-07
 
-summary: "we will integrate the BBC micro:bit with a ThingsBoard gateway called VarIOT using a wireless radio."
+summary: "In this activity, we will integrate the BBC micro:bit with a ThingsBoard gateway called VarIOT using a wireless radio."
 
 thumbnail: "/images/activity-variotmicrobit/fig5.jpg"
 ---
