@@ -59,7 +59,9 @@ For example, suppose you were playing [Where's Waldo](https://en.wikipedia.org/w
 
 Another classic example is the Zero Knowledge Cave.  Here, there are two paths through a cave, both leading back to the entrance, but the path is blocked in the middle.  If you wanted to prove that you can get through the locked door or obstacle in the way, someone could watch you enter the cave on one path, and then return through the other.  As long as they don't follow you, they don't know how you managed to get through it, but they can be pretty sure that you did.
 
-![Zero Knowledge Cave](https://upload.wikimedia.org/wikipedia/commons/a/ad/Zero_knowledge_cave_1.svg)
+<p align="center">
+<img style="max-width:100%;" alt="Zero Knowledge Cave" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Zero_knowledge_cave_1.svg">
+</p>
 
 #### Zero Knowledge and the Coin Toss
 
