@@ -20,6 +20,8 @@ Here, we will curate materials including lesson plans, professional organization
 * [PBS Family Night: Coding by PaTTAN](https://pennsylvaniapbs.org/digital/family-night-coding/)
 * [CS Research Practitioner Partnerships](https://csedresearch.org/projects/our-projects/rpp-for-cs/)
 * [Connecting the micro:bit to the Internet-of-Things](https://www.billmongan.com/posts/2022/07/variotmicrobit/)
+* [Beauty and Joy of Computing Curriculum](https://bjc.edc.org/bjc-r/course/bjc4nyc.html)
+* [Python for the Digital Humanities](https://pythonhumanities.com/python-for-dh-course/)
 
 ### Pedagogy
 * [Peer Instruction for CS](http://peerinstruction4cs.org/)
@@ -28,6 +30,7 @@ Here, we will curate materials including lesson plans, professional organization
 * [CS Unplugged](https://www.csunplugged.org/en/)
 * [Pennsylvania Training and Technical Assistance Network (PaTTAN)](https://www.pattan.net/)
   * [PaTTAN Teacher Toolkit](https://www.pattan.net/Supports/STEM/computer-science/CS-Teacher-Toolkit)
+* [Engage-CSEdu](https://www.engage-csedu.org/)
 
 ### Computing Across the Disciplines
 * [Equitable CS Education for Broader Workforce Preparation through Design Thinking and Ubiquitous Platforms](https://www.billmongan.com/posts/2022/05/remakelearningday/)
