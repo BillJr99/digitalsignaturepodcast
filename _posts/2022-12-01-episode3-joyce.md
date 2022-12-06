@@ -13,3 +13,13 @@ block: "no"
 voices: "Bill Mongan and Kelly Joyce"
 thumbnail: "https://i.ytimg.com/vi/DNlocSdHmjU/hqdefault.jpg"
 ---
+
+Here are links to some of the resources we discussed in this episode!
+
+* PBS Coded Bias: [https://www.pbs.org/independentlens/documentaries/coded-bias/](https://www.pbs.org/independentlens/documentaries/coded-bias/)
+
+* Automating Racism: [https://www.youtube.com/watch?v=Ok5sKLXqynQ&list=PLJ8cMiYb3G5cOFj1VQf8ykNOI0ptuHybc&index=3](https://www.youtube.com/watch?v=Ok5sKLXqynQ&list=PLJ8cMiYb3G5cOFj1VQf8ykNOI0ptuHybc&index=3) 
+
+* Ethical Case Studies: The Online Ethics Center: [https://onlineethics.org/](https://onlineethics.org/)
+
+* White House AI Bill of Rights: [https://www.whitehouse.gov/ostp/ai-bill-of-rights/](https://www.whitehouse.gov/ostp/ai-bill-of-rights/)

@@ -37,6 +37,12 @@ Here, we will curate materials including lesson plans, professional organization
 * [Python for Scientists](https://astrofrog.github.io/py4sci/)
 * [Python for the Digital Humanities](https://pythonhumanities.com/python-for-dh-course/)
 
+### Responsible Artificial Intelligence
+* [PBS Coded Bias](https://www.pbs.org/independentlens/documentaries/coded-bias/)
+* [Automating Racism](https://www.youtube.com/watch?v=Ok5sKLXqynQ&list=PLJ8cMiYb3G5cOFj1VQf8ykNOI0ptuHybc&index=3)
+* [Ethical Case Studies: The Online Ethics Center](https://onlineethics.org/) 
+* [White House AI Bill of Rights](https://www.whitehouse.gov/ostp/ai-bill-of-rights/)
+
 ### Design Thinking
 * [Antigua and Barbuda IT Teacher Workshop: Python, Prototyping and Design Thinking](https://arlduc.org/senseandscale/?p=5572)
   * [IT Curriculum Enhancement Program (ITCEP) Recommendations](https://drive.google.com/file/d/1qADdp9kdumG0ARvtAc0NeMMCc4xUZ4Si/view?usp=sharing)
