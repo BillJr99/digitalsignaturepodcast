@@ -13,7 +13,6 @@ You can watch or listen to our episodes on these platforms!
   * [Subscribe to the Anchor.fm RSS Feed](https://anchor.fm/s/a12340b4/podcast/rss)
 * [Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9hMTIzNDBiNC9wb2RjYXN0L3Jzcw)
 * [Radio Public](https://radiopublic.com/digital-signature-podcast-WYJveV)
-* [Stitcher](https://www.stitcher.com/podcast/digital-signature-podcast)
 * [Pocket Cast](https://pca.st/8trg64qa)
 * [Amazon Music](https://music.amazon.com/podcasts/287202a9-f563-4cda-9e3c-182c72075c4d/digital-signature-podcast)
 * [Castbox.fm](https://castbox.fm/channel/id4985272)
